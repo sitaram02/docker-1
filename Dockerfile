@@ -1,6 +1,7 @@
 FROM openjdk:8-jdk-stretch
 
-RUN apt-get update && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y git curl 
+#RUN rm -rf /var/lib/apt/lists/*
 
 ARG user=jenkins
 ARG group=jenkins
